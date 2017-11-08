@@ -33,8 +33,12 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Swag Shop</h2>
         </div>
-        <div className="App-main">
-          <Product />
+        <div className="container App-main">
+          <div className="row">
+          <Product className="col-sm-4" title="Note 8" price="79,999" imgUrl="https://images-na.ssl-images-amazon.com/images/I/41GZvrGM5bL.jpg"/>
+          <Product className="col-sm-4" title="Note 8" price="79,999" imgUrl="https://images-na.ssl-images-amazon.com/images/I/41GZvrGM5bL.jpg"/>
+          <Product className="col-sm-4" title="Note 8" price="79,999" imgUrl="https://images-na.ssl-images-amazon.com/images/I/41GZvrGM5bL.jpg"/>
+          </div>
         </div>
 
       </div>
