@@ -16,15 +16,14 @@ class NotificationService{
     postNotification = (notifName, data) => {
         let obs = observers[notifName];
         
-        for(var x=0; x<obs.length;x++){
+        for(var x = 0; x < obs.length; x++){
             var obj = obs[x];
             obj.callBack(data);
-        }
-        
+        }   
     }
     
     removeObserver = (observer, notifName) => {
-        let obs = observers[notifName];
+        var obs = observers[notifName];
         
         if(obs){
             for(var x=0; x<obs.length;x++){
@@ -46,7 +45,6 @@ class NotificationService{
         
         let obj =  {observer: observer, callBack: callBack};
         observers[notifName].push(obj);
-        
     }
 }
 
